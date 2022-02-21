@@ -1,4 +1,4 @@
-document.querySelector("div input[type='button']").addEventListener('click', (ev) => {
+document.querySelector("div input[type='button']").addEventListener('click', () => {
 
 	const nev = document.getElementById('nev').value;
 	const telefon = document.getElementById('telefon').value;
@@ -20,8 +20,8 @@ document.querySelector("div input[type='button']").addEventListener('click', (ev
 	}
 
 
-	let rendeles = {
-	nev	:nev,
+	const rendeles = {
+		nev:nev,
 		telefon:parseInt(telefon),
 		irszam:parseInt(irszam),
 		varos:varos,
@@ -32,6 +32,6 @@ document.querySelector("div input[type='button']").addEventListener('click', (ev
 		mennyiseg:parseInt(mennyiseg),
 		comment:comment
 	};
-	console.log(rendeles);
+	console.log(JSON.stringify(rendeles));
 
 });
