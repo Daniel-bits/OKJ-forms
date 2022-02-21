@@ -1,25 +1,23 @@
-document.getElementById('regisztracios_gomb')
-.addEventListener('click', function() {console.log(document.forms['regisztracios_form']['email']);});
+document.getElementById('generate-result').addEventListener('click', () => {
 
-function regisztracios_gomb_kattintas() {
-	{console.log(document.forms['regisztracios_form']['email']);}
+	let textInput = document.getElementById('i-field').value.trim();
 
-}
+	if (textInput.length == 0) {
+		alert('Adja meg a szöveget');
+	}
 
-document.getElementById('regisztracios_gomb')
-.addEventListener('click', (event) => {
-	console.log(document.forms['regisztracios_form']['email']);
-console.log(event.target);
-console.log(event)
-});
-document.getElementById('regisztracios_gomb')
-.addEventListener('click', () => {
-	let email = document.forms['regisztracios_form']['email'].value;
-let nev = document.forms['regisztracios_form']['nev'].value;
-let felhasznalo = {
-	email: email,
-	nev : nev
+	var selected = document.querySelector('input[name="options"]:checked').value;
 
-};
-console.log(felhasznalo);
+	let stringBuilder = "";
+	for (let j = 0; j < textInput.length; j++) {
+		if (selected == 0){
+			stringBuilder += textInput[j].toLowerCase();
+		}
+		else {
+		stringBuilder += textInput[j].toUpperCase();
+		}
+	}
+
+	const outputTag = document.getElementById('output');
+	outputTag.textContent = stringBuilder;
 });

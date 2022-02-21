@@ -1,0 +1,38 @@
+body {
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#container {
+	max-width: fit-content;
+	background-color: steelblue;
+}
+ h5 {
+	margin: 10px 0 18px 5px;
+}
+.caption{
+    background-color: mediumaquamarine;
+    color: #FFFF00;
+    padding: 3px 6px;
+}
+textarea{
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	resize: none;
+}
+
+input, .output, button {
+    margin: .4rem;
+}
+
+#generate-result {
+
+	background-color: peachpuff;
+	color: maroon;
+	border: 2px solid maroon;
+	border-radius: 6px;
+	padding: 12px 20px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NAGYBETŰ - kisbetű</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form action="" name="converter">
+<fieldset id="container">
+	<legend class="caption">NAGYBETŰ - kisbetű konverter</legend>
+	<label>
+		<h5>Adja meg a cserélni kívánt szöveget:</h5>
+		<textarea name="i-field" id="i-field" cols="30" rows="10" ></textarea>
+	</label>
+	<br>
+<input type="radio" name="options" id="options" value="0" required >
+<label for="options">kisbetűssé</label>
+<input type="radio" name="options" id="options" value="1" >
+<label for="options">nagybetűssé</label>
+<br>
+<div class="button">
+	<input type="submit" id="generate-result" value="Mehet" name="generate-result">
+</div>
+</form>
+</fieldset>
+<p id="output"></p>
+<script src="feladat1.js"></script>
+</body>
+</html>
+
+
