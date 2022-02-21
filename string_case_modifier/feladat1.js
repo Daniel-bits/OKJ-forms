@@ -1,5 +1,5 @@
-document.getElementById('generate-result').addEventListener('click', () => {
-
+﻿document.getElementById('generate-result').addEventListener('click', (ev) => {
+	ev.preventDefault();
 	let textInput = document.getElementById('i-field').value.trim();
 
 	if (textInput.length == 0) {
@@ -14,7 +14,7 @@ document.getElementById('generate-result').addEventListener('click', () => {
 			stringBuilder += textInput[j].toLowerCase();
 		}
 		else {
-		stringBuilder += textInput[j].toUpperCase();
+			stringBuilder += textInput[j].toUpperCase();
 		}
 	}
 
