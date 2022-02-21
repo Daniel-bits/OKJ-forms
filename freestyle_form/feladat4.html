@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Basic application form</title>
+</head>
+<body>
+	<form id="application-form">
+		<fieldset>
+		  <legend>Interesting application form 🙄</legend>
+		  <fieldset>
+		   <legend>What is your name?</legend>
+			 <input type="text" name="username" required>
+		  </fieldset>
+		  <fieldset>
+			<legend>What is your favorite color?</legend>
+			  <input type="checkbox" name="colorpick" value="red" required>
+			  <label for="colorpick">Red</label><br>
+			  <input type="checkbox" name="colorpick" value="green">
+			  <label for="colorpick">Green</label><br>
+			  <input type="checkbox" name="colorpick" value="blue">
+			  <label for="colorpick">Blue</label><br>
+			  <input type="checkbox" name="colorpick" value="other">
+			  <label for="colorpick">Other</label>
+			  <input type="text" name="color?">
+		  </fieldset>
+		  <fieldset>
+			<legend>Would you like to become a developer?</legend>
+			  <input type="radio" id="lang1" name="fav_language" value="eng" required>
+			  <label for="lang1">Yes</label><br>
+			  <input type="radio" id="lang2" name="fav_language" value="rus">
+			  <label for="lang2">Ano</label><br>
+			  <input type="radio" id="lang3" name="fav_language" value="hun">
+			  <label for="lang3">Igen</label><br>
+			  <input type="radio" id="lang4" name="fav_language" value="ch_zn">
+			  <label for="lang4">是</label>
+		  </fieldset>
+		  <fieldset>
+			<legend>Why would you like to become a developer?</legend>
+			<textarea rows="10" cols="30" required></textarea>
+		  </fieldset>
+		  <button type="submit" >Elküld</button>
+		</fieldset>
+	</form>
+	<script src="feladat4.js"></script>
+</body>
+</html>
