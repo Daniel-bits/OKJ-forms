@@ -3,21 +3,20 @@
 	let textInput = document.getElementById('i-field').value.trim();
 
 	if (textInput.length == 0) {
-		alert('Adja meg a szöveget');
+		alert('Adja meg a szöveget!');
 	}
 
-	var selected = document.querySelector('input[name="options"]:checked').value;
+	const selected = document.querySelector('input[name="options"]:checked');
+	if (!selected && textInput)
+		alert('Válassza ki az átalakítást!')
 
-	let stringBuilder = "";
-	for (let j = 0; j < textInput.length; j++) {
-		if (selected == 0){
-			stringBuilder += textInput[j].toLowerCase();
+		if (selected.value == 0){
+			textInput = textInput.toLowerCase();
 		}
 		else {
-			stringBuilder += textInput[j].toUpperCase();
+			textInput = textInput.toUpperCase();
 		}
-	}
 
 	const outputTag = document.getElementById('output');
-	outputTag.textContent = stringBuilder;
+	outputTag.textContent = textInput;
 });
